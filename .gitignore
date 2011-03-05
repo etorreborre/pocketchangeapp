@@ -5,6 +5,7 @@ project/plugins/src_managed/
 .idea/*
 .scala_dependencies
 bin/
+pca_example.h2.db
 *.svn*
 .classpath
 .project
