@@ -143,10 +143,10 @@ object RestFormatters {
       
       val contents = new String(rawBytes, "UTF-8")
       JSON.parseFull(contents) match {
-        case Some(data : Map[String,Any]) => {
+        case Some(data : Map[String,_]) => {
           fromMap(data.mapValues(_.toString), account)
         }
-        case other => Failure("Invalid JSON submitted: \"%s\"".format(contents))
+        case None => Failure("Invalid JSON submitted: \"%s\"".format(contents))
       }
     }
     case _ => Failure("Empty body submitted")

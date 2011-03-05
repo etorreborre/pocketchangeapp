@@ -1,7 +1,7 @@
 /*
  * RestAPI.scala
  *
- * Copyright 2008-2010 Derek Chen-Becker, Marius Danciu and Tyler Wier
+ * Copyright 2008-2010 Derek Chen-Becker, Marius Danciu and Tyler Weir
  * 
  */
 package com.pocketchangeapp {

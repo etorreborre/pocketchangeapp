@@ -1,39 +1,39 @@
-# use glob syntax.
-syntax: glob
-*.ser
-*.class
-*~
-*.bak
-*.off
-*.old
-.DS_Store
-
-# logs
-derby.log
-
-# eclipse conf file
-.settings
+project/lib_managed/
+project/boot/
+project/plugins/lib_managed/
+project/plugins/src_managed/
+.idea/*
+.scala_dependencies
+bin/
+*.svn*
 .classpath
 .project
 .manager
-
-# building
-target
-build
-null
-tmp*
-temp*
-dist
-test-output
-PocketChange/lift_example
-
-# other scm
-.svn
-.CVS
-.hg*
-
-# switch to regexp syntax.
-#  syntax: regexp
-#  ^\.pc/
-
-
+*.class
+.svnignore
+.gitignore
+target*
+.settings
+*.iml
+*.ipr
+*.iws
+out/*
+classes/*
+classes-extra/*
+classes-hotfix/*
+classes-tests/*
+infinitest.settings
+resources/migration/talend/DealInput_0.1.zip
+data/*
+specs/bin/*
+specs/saved reports/*
+lift/*
+*/.idea/*
+*ErrorLogs/
+*RecentChanges/
+test/specs/fitnesse.*
+test/specs/fitnesse_debug.*
+test/specs/FitNesseRoot/files/testResults/
+junit*
+/log_errors.log
+/log_info.log
