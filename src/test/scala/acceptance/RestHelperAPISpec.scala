@@ -22,7 +22,7 @@ The REST API serves Expenses and Accounts as XML and Atom documents.
     def e1 = {
       pocketchange.authenticateWith(user.email, "password").
         get("http://localhost:"+Server.PORT+"/api/expense/"+expense.id, contain("hello"))
-    }
+    }.pendingUntilFixed("need to find a proper REST api")
   }
   trait API {
     val driver = new HtmlUnitDriver

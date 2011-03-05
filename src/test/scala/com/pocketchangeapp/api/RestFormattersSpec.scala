@@ -16,8 +16,9 @@ import net.liftweb.common.{Failure, Full}
 @RunWith(classOf[JUnitRunner])
 class RestFormattersSpec extends Specification {
 
-  lazy val account = Database.account
-  lazy val expense = Database.expense
+  lazy val account = Database.createAccount
+  lazy val expense = Database.createExpense
+  step(new Boot().boot)
 
   "An Expense" should {
     "have a REST id" in {

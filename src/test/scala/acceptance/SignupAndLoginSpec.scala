@@ -4,6 +4,7 @@ import org.specs2._
 import runner.JUnitRunner
 import specification._
 import org.junit.runner.RunWith
+import bootstrap.liftweb.Boot
 
 /**
  * This specification shows how to specify a web applications using specs2 and Forms (@see org.specs2.guide.Forms).
@@ -76,7 +77,8 @@ is created and the user is logged in:
 
 Then the user can log in by providing his email address and password:
                                                                                                                         """^
-  Step(pocketChange.logout.execute)                                                                                      ^
+  Step(pocketChange.logout.execute)                                                                                     ^
+                                                                                                                        p^
   pocketChange.
   newForm("Login").
   loginWith("me@dot.com", "password").
@@ -131,7 +133,9 @@ and login again using that address:
                                                                                                                         end
 
   val pocketChange = PocketChangeForms()
+
   def setup = {
+    new Boot().boot
     Server.start
     Database.cleanup
   }
