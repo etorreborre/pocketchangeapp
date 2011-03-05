@@ -1,77 +1,83 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset='utf-8'>
-
-  <title>etorreborre/pocketchangeapp @ GitHub</title>
-
-  <style type="text/css">
-    body {
-      margin-top: 1.0em;
-      background-color: #dbeb7b;
-      font-family: "Helvetica,Arial,FreeSans";
-      color: #000000;
-    }
-    #container {
-      margin: 0 auto;
-      width: 700px;
-    }
-    h1 { font-size: 3.8em; color: #241484; margin-bottom: 3px; }
-    h1 .small { font-size: 0.4em; }
-    h1 a { text-decoration: none }
-    h2 { font-size: 1.5em; color: #241484; }
-    h3 { text-align: center; color: #241484; }
-    a { color: #241484; }
-    .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
-    .download { float: right; }
-    pre { background: #000; color: #fff; padding: 15px;}
-    hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
-    .footer { text-align:center; padding-top:30px; font-style: italic; }
-  </style>
-</head>
-
-<body>
-  <a href="http://github.com/etorreborre/pocketchangeapp"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
-
-  <div id="container">
-
-    <div class="download">
-      <a href="http://github.com/etorreborre/pocketchangeapp/zipball/master">
-        <img border="0" width="90" src="http://github.com/images/modules/download/zip.png"></a>
-      <a href="http://github.com/etorreborre/pocketchangeapp/tarball/master">
-        <img border="0" width="90" src="http://github.com/images/modules/download/tar.png"></a>
-    </div>
-
-    <h1><a href="http://github.com/etorreborre/pocketchangeapp">pocketchangeapp</a>
-      <span class="small">by <a href="http://github.com/etorreborre">etorreborre</a></span></h1>
-
-    <div class="description">
-      Spefications for the Demo Application for the Lift Book.
-    </div>
-
-    <h2>Authors</h2>
-<p>etorreborre (etorreborre@yahoo.com)<br/>Derek Chen-Becker (github@chen-becker.org)<br/>Tyler Weir (tyler.weir@gmail.com)<br/><br/>      </p>
-<h2>Contact</h2>
-<p>etorreborre (etorreborre@yahoo.com)<br/>      </p>
-
-
-    <h2>Download</h2>
-    <p>
-      You can download this project in either
-      <a href="http://github.com/etorreborre/pocketchangeapp/zipball/master">zip</a> or
-      <a href="http://github.com/etorreborre/pocketchangeapp/tarball/master">tar</a> formats.
-    </p>
-    <p>You can also clone the project with <a href="http://git-scm.com">Git</a>
-      by running:
-      <pre>$ git clone git://github.com/etorreborre/pocketchangeapp</pre>
-    </p>
-
-    <div class="footer">
-      get the source code on GitHub : <a href="http://github.com/etorreborre/pocketchangeapp">etorreborre/pocketchangeapp</a>
-    </div>
-
-  </div>
-
-  
-</body>
-</html>
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <style type="text/css" media="all">
+        @import url('./css/maven-base.css');
+        @import url('./css/maven-theme.css');
+      </style>
+      <link href="./css/prettify.css" rel="stylesheet" type="text/css" />
+      <script type="text/javascript" src="./css/prettify.js"></script>
+      <link href="./css/print.css" type="text/css" rel="stylesheet" media="print" />
+      <link href="./css/tooltip.css" type="text/css" rel="stylesheet" />
+      <script type="text/javascript" src="./css/tooltip.js"></script>
+      <script language="javascript"> 
+      function init() {  prettyPrint(); };   
+      /* found on : http://www.tek-tips.com/faqs.cfm?fid=6620 */
+      String.prototype.endsWith = function(str) { return (this.match(str+'$') == str) };
+      function changeWidth(id,width) {  document.getElementById(id).style.width = width; };
+      function changeMarginLeft(id, margin) { document.getElementById(id).style.marginLeft = margin; };
+      function toggleImage(image) {
+        if (image.src.endsWith('images/expanded.gif')) 
+          image.src = 'images/collapsed.gif';
+        else 
+          image.src = 'images/expanded.gif';
+      };
+      function showHide(id) {
+        element = document.getElementById(id);
+        element.style.display = (element.style.display == 'block')? 'none' : 'block';
+      };
+    </script>
+      <script language="javascript">window.onload=init;</script>
+      <!-- the tabber.js file must be loaded after the onload function has been set, in order to run the
+           tabber code, then the init code -->
+      <script type="text/javascript" src="./css/tabber.js"></script> 
+      <link href="./css/tabber.css" type="text/css" rel="stylesheet" media="screen" /> 
+    </head><body><title>Sign-up and login process</title><a name="Sign-up+and+login+process"></a><h2>Sign-up and login process</h2><div class="level0"><a name="Signing+up"></a><h3>Signing up</h3>
+<p>The user can sign up to the <em>PocketChange</em> application to create a user name and login.</p>
+<p>He does so by providing his email address, a password and other personal details. If everything is filled in, a User object<br />
+is created and the user is logged in:</p>
+</div><p></p><form>
+      <table class="dataTable">
+        <tr><th colspan="9">Sign up</th></tr><tr><td class="info" style="background-color:#FFFFFF">Signup with</td><td style="">email</td><td class="info" style="">me@dot.com</td><td style="">password</td><td style="" class="info" colspan="6">password</td></tr><tr><td style="background-color:#FFFFFF">The user must be logged in</td><td class="success" colspan="8">success</td></tr>
+      </table>
+      
+    </form><div class="level0"><a name="Login+in"></a><h3>Login in</h3>
+<p>Then the user can log in by providing his email address and password:</p>
+</div><form>
+      <table class="dataTable">
+        <tr><th colspan="9">Login</th></tr><tr><td class="info" style="background-color:#FFFFFF">Login with</td><td style="">email</td><td class="info" style="">me@dot.com</td><td style="">password</td><td style="" class="info" colspan="6">password</td></tr><tr><td style="background-color:#FFFFFF">The user must be logged in</td><td class="success" colspan="8">success</td></tr>
+      </table>
+      
+    </form><div class="level0">If the email or password is not correct there is an error message:</div><form>
+      <table class="dataTable">
+        <tr><th colspan="9">Login error</th></tr><tr><td style="background-color:#FFFFFF" class="info" colspan="8">Logout</td></tr><tr><td class="info" style="background-color:#FFFFFF">Login with</td><td style="">email</td><td class="info" style="">me@dot.com</td><td style="">password</td><td style="" class="info" colspan="6">wrong</td></tr><tr><td style="background-color:#FFFFFF">The message is</td><td class="success" colspan="8">Invalid Username/Password</td></tr>
+      </table>
+      
+    </form><div class="level0"><a name="Lost+password"></a><h3>Lost password</h3>
+<p>If the user has lost his password he can recover it by entering his email address. He will then receive an email resetting<br />
+his password with a new one:</p>
+</div><form>
+      <table class="dataTable">
+        <tr><th colspan="6">Lost password</th></tr><tr><td class="info" style="background-color:#FFFFFF">Ask for lost password with</td><td style="">email</td><td style="" class="info" colspan="4">me@dot.com</td></tr><tr><td style="background-color:#FFFFFF">The message is</td><td class="success" colspan="5">Password Reset Email sent</td></tr>
+      </table>
+      
+    </form><div class="level0"><a name="Changing+the+password"></a><h3>Changing the password</h3>
+<p>The user can change his password by entering the old one and a new one. If the new password is accepted, a message is displayed<br />
+and the user can login with his new password:</p>
+</div><form>
+      <table class="dataTable">
+        <tr><th colspan="9">Change password</th></tr><tr><td class="info" style="background-color:#FFFFFF">Change password</td><td style="">old password</td><td class="info" style="">password</td><td style="">new password</td><td style="" class="info" colspan="6">password2</td></tr><tr><td style="background-color:#FFFFFF">The message is</td><td class="success" colspan="8">Password Changed</td></tr><tr><td style="background-color:#FFFFFF" class="info" colspan="8">Logout</td></tr><tr><td class="info" style="background-color:#FFFFFF">Login with</td><td style="">email</td><td class="info" style="">me@dot.com</td><td style="">password</td><td style="" class="info" colspan="6">password2</td></tr><tr><td style="background-color:#FFFFFF">The user must be logged in</td><td class="success" colspan="8">success</td></tr>
+      </table>
+      
+    </form><div class="level0"><a name="Changing+the+user+details"></a><h3>Changing the user details</h3>
+<p>The user can change his details, first name, last name and his email address. If he changed his email address he can logout<br />
+and login again using that address:</p>
+</div><form>
+      <table class="dataTable">
+        <tr><th colspan="9">Edit user</th></tr><tr><td style="background-color:#FFFFFF" class="info" colspan="8">Edit User</td></tr><tr><td style="background-color:#FFFFFF">The message is</td><td class="success" colspan="8">You have updated your profile</td></tr><tr><td style="background-color:#FFFFFF" class="info" colspan="8">Logout</td></tr><tr><td class="info" style="background-color:#FFFFFF">Login with</td><td style="">email</td><td class="info" style="">me2@dot.com</td><td style="">password</td><td style="" class="info" colspan="6">password2</td></tr><tr><td style="background-color:#FFFFFF">The user must be logged in</td><td class="success" colspan="8">success</td></tr>
+      </table>
+      
+    </form><p></p><br /><table class="dataTable">
+        <tr><th colSpan="2">Total for specification Sign-up and login process</th></tr>
+        <tr><td>Finished in</td><td class="info">19 seconds, 494 ms</td></tr>
+        <tr><td>Results</td><td class="success">6 examples, 0 failure, 0 error</td></tr>
+      </table></body></html>
