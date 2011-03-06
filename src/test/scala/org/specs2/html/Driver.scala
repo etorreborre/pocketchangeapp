@@ -114,7 +114,7 @@ trait Driver {
   }
 
   protected def debug[T](message: T)(implicit args: DriverArgs = DriverArgs()) : T = {
-    //if (args.debug)
+    if (args.debug)
       println(message)
     message
   }

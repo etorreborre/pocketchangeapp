@@ -30,6 +30,7 @@ class Boot {
   val logger = Logger(classOf[Boot])
 
   def boot {
+    if (Boot.booted) return
     /*
      * LiftRules.early allows us to apply functions to the request before
      * Lift has started to work with it. In our case, we're explicitly
@@ -146,7 +147,11 @@ class Boot {
     }
 
     logger.info("Bootstrap up")
+    Boot.booted = true
   }
+}
+object Boot {
+  var booted = false
 }
 
 object MenuInfo {

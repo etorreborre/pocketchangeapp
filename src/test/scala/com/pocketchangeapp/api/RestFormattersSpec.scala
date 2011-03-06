@@ -8,17 +8,17 @@ import runner.JUnitRunner
 import RestFormatters._
 import model._
 import org.junit.runner.RunWith
-import bootstrap.liftweb.Boot
 import net.liftweb.json.JsonAST
 import java.io.StringWriter
 import net.liftweb.common.{Failure, Full}
+import bootstrap.liftweb.{BootTest, Boot}
 
 @RunWith(classOf[JUnitRunner])
 class RestFormattersSpec extends Specification {
 
   lazy val account = Database.createAccount
   lazy val expense = Database.createExpense
-  step(new Boot().boot)
+  step(BootTest.boot)
 
   "An Expense" should {
     "have a REST id" in {

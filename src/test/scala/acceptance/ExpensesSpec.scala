@@ -5,7 +5,7 @@ import runner.JUnitRunner
 import specification._
 import org.junit.runner.RunWith
 import com.pocketchangeapp.model.User
-import bootstrap.liftweb.Boot
+import bootstrap.liftweb.{BootTest, Boot}
 
 @RunWith(classOf[JUnitRunner])
 class ExpensesSpec extends SpecificationWithJUnit { def is = literate^
@@ -17,7 +17,7 @@ The user has to create an Account to be able to enter expenses.
 
 To do so he provides the account name and a description:
                                                                                                                         """^
-  Step(new Boot().boot)                                                                                                 ^
+  Step(BootTest.boot)                                                                                                 ^
   Step(Database.cleanup)                                                                                                ^
   Step(Database.saveUser)                                                                                               ^
                                                                                                                         p^

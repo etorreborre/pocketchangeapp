@@ -4,7 +4,7 @@ import org.specs2._
 import runner.JUnitRunner
 import specification._
 import org.junit.runner.RunWith
-import bootstrap.liftweb.Boot
+import bootstrap.liftweb.{BootTest, Boot}
 
 /**
  * This specification shows how to specify a web applications using specs2 and Forms (@see org.specs2.guide.Forms).
@@ -135,7 +135,7 @@ and login again using that address:
   val pocketChange = PocketChangeForms()
 
   def setup = {
-    new Boot().boot
+    BootTest.boot
     Server.start
     Database.cleanup
   }
